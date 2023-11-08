@@ -1,5 +1,5 @@
-!pip install streamlit-aggrid
-!pip install streamlit-authenticator
+#!pip install streamlit-aggrid
+#!pip install streamlit-authenticator
 
 import streamlit as st
 import pandas as pd
