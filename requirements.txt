@@ -1,2 +1,8 @@
+streamlit
+numpy
+pandas
+plotly
+xlsxwriter
+openpyxl
 streamlit-aggrid
 streamlit-authenticator
