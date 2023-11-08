@@ -89,7 +89,7 @@ usernames=["kren22g","darielamcp"]
 password=["karen22","amadelosdatos123"]
 hashed_passwords = stauth.Hasher(password).generate()
     
-authenticator = stauth.Authenticate(names, usernames, hashed_passwords,"loads_dashboard", "abcdef")
+authenticator = stauth.Authenticate(names, usernames, hashed_passwords,"loads_dashboard", "abcdef", cookie_expiry_days=15)
 
 name, authentication_status, username = authenticator.login("Login","main")
 
