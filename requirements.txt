@@ -1,9 +1,5 @@
+python == 3.8.0
 streamlit==1.27.2
-numpy
 pandas==1.5.3
-plotly
-xlsxwriter
-openpyxl
-st_aggrid==0.3.4
-streamlit_authenticator == 0.1.5
-python>=3.6.0
+streamlit-authenticator == 0.1.5
+streamlit-aggrid==0.3.4
