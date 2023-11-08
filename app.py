@@ -4,8 +4,8 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-import streamlit_authenticator as stauth
 from st_aggrid import AgGrid
+import streamlit_authenticator as stauth
 import pickle
 from pathlib import Path
 
