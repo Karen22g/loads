@@ -6,3 +6,4 @@ python_bcrypt==0.3.2
 streamlit==1.23.1
 streamlit_authenticator==0.1.5
 streamlit_option_menu==0.3.6
+openpyxl
