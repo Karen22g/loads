@@ -4,5 +4,6 @@ pandas==1.5.3
 plotly
 xlsxwriter
 openpyxl
-st_aggrid
-streamlit_authenticator
+st_aggrid==0.3.4
+streamlit_authenticator == 0.1.5
+python>=3.6.0
