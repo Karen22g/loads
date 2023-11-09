@@ -1,8 +1,11 @@
+#!pip install streamlit-aggrid
+#!pip install streamlit-authenticator
+
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-import streamlit_authenticator as stauth
 from st_aggrid import AgGrid
+import streamlit_authenticator as stauth
 import pickle
 from pathlib import Path
 
@@ -16,14 +19,19 @@ columnsoutput=['CityOrigin', 'CountyOrigin', 'PickUp', 'CityDestination',  'Coun
                'Broker_Shipper_Email', 'Broker_Shipper_Phone','Weight','Size',   
                'PickUp_Stops', 'DropOff_Stops', 'Specifications', 'Commodity']
 
-df=pd.read_parquet("dfloads.parquet")
 #page = st.sidebar.radio("Select page", ["Search", "Brokers"])
 
 #----------- LOADS PAGE ----------------------
 
+
+
+@st.cache_data(experimental_allow_widgets=True)
 def mi_aplicacion():
     
     authenticator.logout("Logout",'main')
+    
+    df=pd.read_parquet("dfloads.parquet")
+
     st.title("Loads request")
     st.write(f'Welcome, {name}')
     st.write("To filter the available loads and contact brokers to start the booking process")
